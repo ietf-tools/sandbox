@@ -1,33 +1,37 @@
-# Sandbox Status (sandbox-status)
+# Sandbox Status
 
 Status Landing Page for Sandbox Environments
 
-## Install the dependencies
+https://dev.ietf.org
+
+## Server
+
+Run in dev mode:
+
 ```bash
+cd server
 yarn
-# or
-npm install
+yarn dev
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+Run in production mode:
+
+```
+node index.js
+```
+
+## Client
+
+Run in dev mode:
+
 ```bash
-quasar dev
+cd client
+yarn
+yarn dev
 ```
 
+Build for production:
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
 ```
-
-
-
-### Build the app for production
-```bash
-quasar build
+yarn build
 ```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
