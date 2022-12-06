@@ -7,7 +7,6 @@ export default {
   Query: {
     async projects () {
       const containers = await DKR.listContainers()
-      console.info(containers)
       return APPDATA.projects.map(pr => {
         const relContainers = containers.filter(c => c.Names.some(n => n.startsWith(`/${pr.prefix}-`) && n.endsWith(`-${pr.suffix}`)))
 
