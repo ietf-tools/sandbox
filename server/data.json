@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "id": "datatracker",
+      "name": "Datatracker",
+      "description": "The day-to-day front-end to the IETF database for people who work on IETF standards.",
+      "prefix": "dt",
+      "suffix": "app",
+      "githubUrl": "https://github.com/ietf-tools/datatracker",
+      "githubBuildUrl": "https://github.com/ietf-tools/datatracker/actions/workflows/build.yml",
+      "website": "https://datatracker.ietf.org"
+    },
+    {
+      "id": "wagtail",
+      "name": "Website",
+      "description": "The IETF main public-facing website.",
+      "prefix": "ws",
+      "suffix": "app",
+      "githubUrl": "https://github.com/ietf-tools/wagtail_website",
+      "githubBuildUrl": "https://github.com/ietf-tools/wagtail_website/actions",
+      "website": "https://ietf.org"
+    }
+  ]
+}

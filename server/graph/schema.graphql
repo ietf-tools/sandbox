@@ -1,0 +1,35 @@
+# SCALARS
+
+scalar Date
+scalar JSON
+
+# QUERY
+
+type Query {
+  projects: [Project]
+}
+
+# TYPES
+
+type Project {
+  id: String
+  name: String
+  description: String
+  githubUrl: String
+  githubBuildUrl: String
+  website: String
+  instances: [ProjectInstance]
+}
+
+type ProjectInstance {
+  id: String
+  branch: String
+  version: String
+  commitSha: String
+  githubUrl: String
+  githubBuildUrl: String
+  website: String
+  image: String
+  imageId: String
+  createdAt: Date
+}

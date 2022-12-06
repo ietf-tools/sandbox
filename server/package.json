@@ -1,0 +1,48 @@
+{
+  "name": "sandbox-status-server",
+  "version": "1.0.0",
+  "description": "Status Landing Page for Sandbox Environments",
+  "productName": "Sandbox Status",
+  "author": "IETF Tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "@apollo/server": "4.2.2",
+    "@graphql-tools/schema": "9.0.10",
+    "compression": "1.7.4",
+    "cors": "2.8.5",
+    "dockerode": "3.3.4",
+    "express": "4.18.2",
+    "graphql": "16.6.0",
+    "lodash-es": "4.17.21",
+    "luxon": "3.1.1",
+    "serve-favicon": "2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "8.29.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.6.0",
+    "eslint-plugin-promise": "6.1.1",
+    "nodemon": "2.0.20"
+  },
+  "engines": {
+    "node": "^18",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "nodemonConfig": {
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "ext": "js,json,graphql,gql",
+    "watch": [
+      "graph/",
+      "data.json",
+      "index.js"
+    ]
+  }
+}
