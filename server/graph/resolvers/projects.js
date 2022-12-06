@@ -8,7 +8,7 @@ export default {
     async projects () {
       const containers = await DKR.listContainers()
       return APPDATA.projects.map(pr => {
-        const relContainers = containers.filter(c => c.Names.some(n => n.startsWith(`/${pr.prefix}-`) && n.endsWith(`-${pr.suffix}`)))
+        const relContainers = containers.filter(c => c.Names.some(n => n.startsWith(`/${pr.prefix}-`)))
 
         return {
           id: pr.id,
