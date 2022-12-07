@@ -23,7 +23,7 @@ export default {
             const appVersion = c.Labels?.appversion
             const commitSha = c.Labels?.commit
             const ghRunId = c.Labels?.ghrunid
-            const website = c.Labels?.website
+            const hostname = c.Labels?.hostname
 
             return {
               id: c.Id,
@@ -33,7 +33,7 @@ export default {
               commitSha: commitSha || 'unknown',
               githubUrl: commitSha ? `${pr.githubUrl}/commit/${commitSha}` : null,
               githubBuildUrl: ghRunId ? `${pr.githubUrl}/actions/runs/${ghRunId}` : null,
-              website,
+              website: hostname ? `https://${hostname}` : null,
               image: c.Image,
               imageId: c.ImageId,
               createdAt: DateTime.fromSeconds(c.Created).toJSDate()
