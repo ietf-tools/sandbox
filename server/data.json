@@ -13,9 +13,9 @@
       "id": "wagtail",
       "name": "Website",
       "description": "The IETF main public-facing website.",
-      "prefix": "ws",
+      "prefix": "ws-app",
       "githubUrl": "https://github.com/ietf-tools/wagtail_website",
-      "githubBuildUrl": "https://github.com/ietf-tools/wagtail_website/actions",
+      "githubBuildUrl": "https://github.com/ietf-tools/wagtail_website/actions/workflows/build.yml",
       "website": "https://ietf.org"
     }
   ]
