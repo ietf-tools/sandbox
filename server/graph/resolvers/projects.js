@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon'
-import { last } from 'lodash-es'
+import { last, tail } from 'lodash-es'
 
 /* global APPDATA, DKR */
 
@@ -28,7 +28,7 @@ export default {
             return {
               id: c.Id,
               name: normalizedName,
-              branch: last(nameParts),
+              branch: nameParts.length > 2 ? tail(nameParts).join('-') : last(nameParts),
               version: appVersion || 'Unknown',
               commitSha: commitSha || 'unknown',
               githubUrl: commitSha ? `${pr.githubUrl}/commit/${commitSha}` : null,
