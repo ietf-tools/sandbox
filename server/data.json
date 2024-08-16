@@ -10,6 +10,15 @@
       "website": "https://datatracker.ietf.org"
     },
     {
+      "id": "mailarchive",
+      "name": "Mail Archive",
+      "description": "IETF Mail List Archives.",
+      "prefix": "ma-app",
+      "githubUrl": "https://github.com/ietf-tools/mailarchive",
+      "githubBuildUrl": "https://github.com/ietf-tools/mailarchive/actions/workflows/build.yml",
+      "website": "https://mailarchive.ietf.org"
+    },
+    {
       "id": "wagtail",
       "name": "Website",
       "description": "The IETF main public-facing website.",
